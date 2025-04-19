@@ -32,7 +32,7 @@ const ServiceHero = () => {
           >
             <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm">
               <CheckCircle size={18} className="text-blue-500" />
-              <span className="text-sm font-medium">Trusted by 30+ SaaS companies</span>
+              <span className="text-sm font-medium">Trusted by 10+ SaaS companies</span>
             </div>
             <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm">
               <CheckCircle size={18} className="text-blue-500" />

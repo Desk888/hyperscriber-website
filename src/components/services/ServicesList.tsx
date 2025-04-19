@@ -11,7 +11,7 @@ const services = [
   {
     id: "linkedin",
     icon: <MessageSquare className="h-8 w-8" />,
-    title: 'LinkedIn Ghostwriting',
+    title: 'LinkedIn Ghostwriting for Founders',
     description: 'Position yourself as a thought leader and attract qualified leads.',
     details: [
       'Custom posts that match your tone and expertise',
@@ -29,7 +29,7 @@ const services = [
       {
         title: "AI Content Foundation",
         icon: <Lightbulb className="h-6 w-6 text-blue-500" />,
-        description: "Our AI analyzes trending topics and your audience's preferences to create initial content outlines."
+        description: "We analyze trending topics and your audience's preferences to create initial content outlines."
       },
       {
         title: "Expert Human Refinement",
@@ -343,27 +343,6 @@ const ServicesList = () => {
                             </ul>
                           </AccordionContent>
                         </AccordionItem>
-                        
-                        {/* <AccordionItem value={`case-study-${service.id}`} className="border-0">
-                          <AccordionTrigger className="py-2 font-semibold text-lg">
-                            Case Study Results
-                          </AccordionTrigger>
-                          <AccordionContent className="pt-2">
-                            <div className="bg-slate-50 p-5 rounded-xl">
-                              <p className="font-medium mb-3">{service.caseStudy.client}</p>
-                              <ul className="space-y-2">
-                                {service.caseStudy.results.map((result, i) => (
-                                  <li key={i} className="flex items-center gap-3">
-                                    <div className="flex items-center justify-center bg-blue-50 p-1 rounded-full">
-                                      <CheckCircle size={16} className="text-blue-500" />
-                                    </div>
-                                    <span className="text-sm">{result}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          </AccordionContent>
-                        </AccordionItem> */}
                       </Accordion>
                     </div>
                   </div>

@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const services = [
   {
-    title: 'LinkedIn Ghostwriting',
+    title: 'LinkedIn Ghostwriting For Founders',
     description: 'Build thought leadership and generate leads with professionally crafted LinkedIn content.',
     icon: <MessageSquare className="h-8 w-8" />,
     period: '/month',

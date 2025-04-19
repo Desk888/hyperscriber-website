@@ -9,7 +9,7 @@ type Message = {
 const ChatBot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const initialMessages: Message[] = [
-    { sender: 'ai' as const, text: 'Hi there! How can I help?' },
+    { sender: 'ai' as const, text: 'Hi there! Select one of the questions below to get your answer.' },
   ];
   const [messages, setMessages] = useState<Message[]>(initialMessages);
   const [input, setInput] = useState('');
@@ -188,39 +188,6 @@ const ChatBot: React.FC = () => {
             )}
             <div ref={messagesEndRef} />
           </div>
-
-
-
-          
-          <form
-            className="p-3 border-t border-white/30 bg-white/20 rounded-b-2xl flex gap-2"
-            onSubmit={e => {
-              e.preventDefault();
-              if (!loading) sendMessage();
-            }}
-            autoComplete="off"
-          >
-            <input
-              type="text"
-              className="flex-1 px-4 py-2 rounded-xl border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm bg-white/90 dark:bg-gray-800/90 text-gray-900 dark:text-gray-100 shadow-sm"
-              placeholder="Type your message..."
-              value={input}
-              onChange={e => setInput(e.target.value)}
-              onKeyDown={handleInputKeyDown}
-              disabled={loading}
-              aria-label="Type your message"
-            />
-            <button
-              type="submit"
-              className="bg-gradient-to-br from-blue-600 to-blue-700 text-white px-4 py-2 rounded-xl shadow hover:scale-105 transition-transform duration-150 font-semibold disabled:opacity-60"
-              disabled={loading || !input.trim()}
-            >
-              Send
-            </button>
-          </form>
-          {error && (
-            <div className="text-xs text-red-600 px-4 pb-2">{error}</div>
-          )}
         </div>
       )}
 
