@@ -137,9 +137,12 @@ const ChatBot: React.FC = () => {
                 {idx === 0 && msg.sender === 'ai' && messages.length === 1 && !loading && (
                   <div className="flex flex-col items-start gap-2 mt-2 ml-2">
                     {[
-                      'What is your name?',
-                      'Tell me a joke.',
-                      'What is the weather today?'
+                      'In what ways does a 70/30 split between AI-generated and human-edited content accelerate production while maintaining high quality and brand voice?',
+  'What specific advantages does AI bring to modern content marketing strategies, particularly in terms of scalability, personalization, and SEO?',
+  'How can integrating AI into a marketing team’s content workflow streamline ideation, creation, and publishing processes?',
+  'Can you give real-world examples of AI-generated content used by SaaS companies to drive traffic, engagement, or conversions?',
+  'How using AI decreases cost for internal marketing teams for startups on tight budgets?',
+  'How can startups on lean budgets reduce content production costs by leveraging AI instead of expanding internal marketing teams?'
                     ].map((prompt) => (
                       <button
                         key={prompt}
