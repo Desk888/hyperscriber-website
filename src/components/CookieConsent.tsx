@@ -1,59 +1,54 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { X } from 'lucide-react';
 
 const CookieConsent = () => {
   const [showBanner, setShowBanner] = useState(false);
-  
+
   useEffect(() => {
-    
     const hasAcceptedCookies = localStorage.getItem('cookiesAccepted');
     if (!hasAcceptedCookies) {
       setShowBanner(true);
     }
   }, []);
-  
+
   const acceptCookies = () => {
     localStorage.setItem('cookiesAccepted', 'true');
     setShowBanner(false);
   };
-  
+
+  const declineCookies = () => {
+    localStorage.setItem('cookiesAccepted', 'false');
+    setShowBanner(false);
+  };
+
   if (!showBanner) return null;
-  
+
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-white/95 backdrop-blur-sm border-t shadow-lg animate-fade-in">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <div className="flex-1">
-          <h3 className="text-sm font-semibold mb-1">We use cookies</h3>
-          <p className="text-sm text-muted-foreground">
-            This website uses cookies to improve your experience. By continuing to browse, you consent to our use of cookies.
-          </p>
-        </div>
-        <div className="flex items-center gap-3">
+    <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/50 backdrop-blur-[2px]">
+      <div className="bg-white rounded-2xl shadow-2xl max-w-md w-[92vw] md:w-full px-8 py-8 flex flex-col items-center gap-6 animate-fade-in border border-purple-200">
+        <h3 className="text-2xl md:text-3xl font-extrabold leading-tight tracking-tight text-gray-900 mb-2 text-center">
+          We use cookies
+        </h3>
+        <p className="text-base md:text-lg text-center text-muted-foreground font-medium">
+          This website uses cookies to improve your experience. You must accept or decline before continuing.
+        </p>
+        <div className="flex gap-4 w-full mt-2 justify-center">
           <Button
             variant="outline"
-            size="sm"
-            onClick={() => setShowBanner(false)}
-            className="whitespace-nowrap"
+            size="lg"
+            className="font-bold py-2 px-6 rounded-lg text-lg"
+            onClick={declineCookies}
+            autoFocus
           >
             Decline
           </Button>
           <Button
-            size="sm"
+            size="lg"
+            className="bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 text-white font-bold py-2 px-6 rounded-lg text-lg shadow-button transition duration-200"
             onClick={acceptCookies}
-            className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 whitespace-nowrap"
           >
             Accept All
-          </Button>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="rounded-full"
-            onClick={() => setShowBanner(false)}
-          >
-            <X size={18} />
-            <span className="sr-only">Close</span>
           </Button>
         </div>
       </div>
@@ -62,3 +57,4 @@ const CookieConsent = () => {
 };
 
 export default CookieConsent;
+
