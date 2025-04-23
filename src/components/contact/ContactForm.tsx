@@ -18,6 +18,7 @@ const contactFormSchema = z.object({
   email: z.string().email({
     message: "Please enter a valid email address."
   }),
+  company: z.string().optional(),
   message: z.string().min(10, {
     message: "Message must be at least 10 characters."
   })
@@ -34,6 +35,7 @@ const ContactForm = () => {
     defaultValues: {
       name: "",
       email: "",
+      company: "",
       message: ""
     }
   });
@@ -117,6 +119,24 @@ const ContactForm = () => {
                 <FormControl>
                   <Input 
                     placeholder="email@example.com" 
+                    className="rounded-lg border-gray-200 focus:ring-blue-500 focus:border-blue-500" 
+                    {...field} 
+                  />
+                </FormControl>
+                <FormMessage className="text-sm" />
+              </FormItem>
+            )} 
+          />
+          
+          <FormField 
+            control={form.control} 
+            name="company" 
+            render={({ field }) => (
+              <FormItem className="mb-1">
+                <FormLabel className="text-base font-medium">Company (optional)</FormLabel>
+                <FormControl>
+                  <Input 
+                    placeholder="Your company name" 
                     className="rounded-lg border-gray-200 focus:ring-blue-500 focus:border-blue-500" 
                     {...field} 
                   />
