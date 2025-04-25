@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Shield, AlertTriangle } from 'lucide-react';
@@ -149,7 +148,7 @@ const CookieConsent = () => {
               
               <Button
                 size="sm"
-                className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 font-bold py-2 px-4 rounded-lg text-base"
+                className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold px-4 py-3 rounded-full hover:opacity-90 transition-opacity duration-200 text-md hover:scale-110 transition-transform duration-200"
                 onClick={acceptAll}
               >
                 Accept All
@@ -231,4 +230,3 @@ const CookieConsent = () => {
 };
 
 export default CookieConsent;
-
