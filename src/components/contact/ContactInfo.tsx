@@ -53,21 +53,11 @@ const ContactInfo = () => {
               <div className="flex items-center justify-center h-12 w-12 rounded-full bg-white/20 text-white">
                 <Phone className="h-5 w-5" />
               </div>
-              <div>
-                <p className="text-sm text-white/70 font-medium">Phone</p>
-                <a href="tel:+447543469409" className="text-white hover:text-white/80 transition-colors">
-                  UK +44 7543 469409 (WhatsApp Available)
-                </a>
-              </div>
             </div>
             
             <div className="flex items-center space-x-4">
               <div className="flex items-center justify-center h-12 w-12 rounded-full bg-white/20 text-white">
                 <MapPin className="h-5 w-5" />
-              </div>
-              <div>
-                <p className="text-sm text-white/70 font-medium">Location</p>
-                <span className="text-white">London, UK</span>
               </div>
             </div>
           </div>

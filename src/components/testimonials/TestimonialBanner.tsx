@@ -15,10 +15,10 @@ const TestimonialBanner = () => {
           <Quote className="text-blue-600 h-10 w-10 flex-shrink-0 opacity-80" />
           <div>
             <p className="text-xl md:text-2xl text-slate-700 font-medium mb-3 leading-relaxed">
-              "HyperScriber transformed our content strategy. Their AI-powered approach delivered exceptional results."
+              "As a solo SaaS founder, things get chaotic—HyperScriber 10xed my productivity by taking content off my plate so I could focus on building my product and growing my business."
             </p>
             <p className="text-sm md:text-base text-slate-600">
-              <span className="font-semibold">Sarah Johnson</span> • <span className="text-blue-600">CEO at TechFlow</span>
+              <span className="font-semibold">David F.</span> • <span className="text-blue-600">CEO at Briefly</span>
             </p>
           </div>
           <Quote className="text-blue-600 h-10 w-10 flex-shrink-0 rotate-180 opacity-80" />

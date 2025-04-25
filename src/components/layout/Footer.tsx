@@ -107,21 +107,6 @@ const Footer = () => {
                 info@hyperscriber.com
                 </a>
               </li>
-              <li className="flex items-start group">
-                <Phone className="h-5 w-5 text-blue-600 mr-3 mt-0.5 group-hover:scale-110 transition-transform" />
-                <a 
-                  href="tel:+447543469409" 
-                  className="text-muted-foreground hover:text-blue-600 transition-colors"
-                >
-                  +44 7543 469409
-                </a>
-              </li>
-              <li className="flex items-start group">
-                <MapPin className="h-5 w-5 text-blue-600 mr-3 mt-0.5 group-hover:scale-110 transition-transform" />
-                <span className="text-muted-foreground">
-                  London, UK
-                </span>
-              </li>
             </ul>
           </div>
         </div>
