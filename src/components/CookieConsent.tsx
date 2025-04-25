@@ -128,11 +128,11 @@ const CookieConsent = () => {
             
             <div className="border-t border-gray-200 w-full my-2"></div>
             
-            <div className="flex gap-4 w-full mt-2 justify-center flex-col sm:flex-row">
+            <div className="flex gap-4 w-full mt-2 justify-center flex-col sm:flex-row space-y-2 sm:space-y-0">
               <Button
                 variant="outline"
-                size="lg"
-                className="font-medium py-2 px-6 rounded-lg text-lg border-gray-300"
+                size="sm"
+                className="w-full sm:w-auto font-medium py-2 px-4 rounded-lg text-base border-gray-300"
                 onClick={() => setShowPreferences(true)}
               >
                 Preferences
@@ -140,16 +140,16 @@ const CookieConsent = () => {
               
               <Button
                 variant="outline"
-                size="lg"
-                className="font-medium py-2 px-6 rounded-lg text-lg border-gray-300"
+                size="sm"
+                className="w-full sm:w-auto font-medium py-2 px-4 rounded-lg text-base border-gray-300"
                 onClick={acceptEssential}
               >
                 Essential Only
               </Button>
               
               <Button
-                size="lg"
-                className="bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 text-white font-bold py-2 px-6 rounded-lg text-lg shadow-button transition duration-200"
+                size="sm"
+                className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 font-bold py-2 px-4 rounded-lg text-base"
                 onClick={acceptAll}
               >
                 Accept All
@@ -231,3 +231,4 @@ const CookieConsent = () => {
 };
 
 export default CookieConsent;
+
