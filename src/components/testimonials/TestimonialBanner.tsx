@@ -4,32 +4,24 @@ import { Quote } from 'lucide-react';
 
 const TestimonialBanner = () => {
   return (
-    <section className="bg-gradient-to-br from-slate-50 via-blue-50/50 to-slate-50 py-20">
-      <div className="container mx-auto px-4 max-w-6xl">
+    <section className="bg-gradient-to-r from-slate-50 to-blue-50 py-16 border-y border-slate-200">
+      <div className="container mx-auto px-4 max-w-5xl">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="relative bg-white rounded-3xl p-10 shadow-lg border border-blue-100"
+          className="flex items-center justify-center gap-6 text-center bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-sm"
         >
-          <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-blue-600 rounded-full p-3 shadow-lg">
-            <Quote className="text-white h-6 w-6" />
-          </div>
-          
-          <div className="max-w-3xl mx-auto text-center pt-4">
-            <p className="text-2xl md:text-3xl text-slate-800 font-medium mb-6 leading-relaxed">
+          <Quote className="text-blue-600 h-10 w-10 flex-shrink-0 opacity-80" />
+          <div>
+            <p className="text-xl md:text-2xl text-slate-700 font-medium mb-3 leading-relaxed">
               "HyperScriber transformed our content strategy. Their AI-powered approach delivered exceptional results."
             </p>
-            <div className="flex items-center justify-center gap-3">
-              <div className="h-12 w-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-semibold text-lg">
-                SJ
-              </div>
-              <div className="text-left">
-                <p className="font-semibold text-slate-800">Sarah Johnson</p>
-                <p className="text-blue-600 font-medium">CEO at TechFlow</p>
-              </div>
-            </div>
+            <p className="text-sm md:text-base text-slate-600">
+              <span className="font-semibold">Sarah Johnson</span> • <span className="text-blue-600">CEO at TechFlow</span>
+            </p>
           </div>
+          <Quote className="text-blue-600 h-10 w-10 flex-shrink-0 rotate-180 opacity-80" />
         </motion.div>
       </div>
     </section>
