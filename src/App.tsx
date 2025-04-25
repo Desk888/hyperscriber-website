@@ -24,7 +24,7 @@ const queryClient = new QueryClient({
       refetchOnWindowFocus: false,
       retry: 1,
       staleTime: 60000, // 1 minute
-      cacheTime: 300000, // 5 minutes
+      gcTime: 300000, // 5 minutes (previously cacheTime)
       // Only perform GETs for queries
       queryFn: async ({ queryKey, signal }) => {
         const response = await fetch(Array.isArray(queryKey) ? queryKey[0] : queryKey.toString(), { 
