@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MessageSquare, FileText, Laptop, Mail, ArrowRight, CheckCircle, BarChart, Users, Target, Lightbulb, PenTool, ChevronRight, Layers, Shield } from 'lucide-react';
@@ -164,51 +163,55 @@ const services = [
     bgLight: 'bg-teal-50'
   },
   {
-    id: "newsletter",
+    id: "email-marketing",
     icon: <Mail className="h-8 w-8" />,
-    title: 'Newsletter Creation',
-    description: 'AI-assisted newsletters for SaaS brands to nurture leads, maintain customer engagement, and drive recurring revenue.',
+    title: 'Email Marketing Solutions',
+    description: 'Drive engagement and conversions with comprehensive email marketing services.',
     details: [
-      'Weekly or monthly newsletters tailored to your audience',
-      'Audience segmentation for personalized messaging',
-      'A/B testing subject lines and content formats',
-      'Automated workflow setup and management',
-      'Detailed analytics and performance optimization'
+      'Strategic newsletter campaigns',
+      'Custom email template design',
+      'Automated workflow setup',
+      'A/B testing strategies',
+      'Email sequence creation',
+      'List segmentation & management',
+      'Performance analytics & optimization'
     ],
     benefits: [
-      'Improved customer retention and engagement',
-      'Higher lead nurturing effectiveness',
-      'Increased recurring revenue through regular audience touchpoints',
-      'Brand consistency throughout the customer journey'
+      'Higher customer engagement and retention',
+      'Improved lead nurturing and conversion rates',
+      'Consistent brand messaging across email campaigns',
+      'Data-driven optimization of email performance',
+      'Automated customer journey touchpoints'
     ],
     process: [
       {
-        title: "Audience Segmentation",
-        icon: <Users className="h-6 w-6 text-sky-500" />,
-        description: "Strategic division of your audience for personalized messaging."
+        title: "Strategy Development",
+        icon: <Target className="h-6 w-6 text-sky-500" />,
+        description: "Create comprehensive email marketing strategy aligned with business goals."
       },
       {
-        title: "AI-Powered Content Creation",
-        icon: <Lightbulb className="h-6 w-6 text-sky-500" />,
-        description: "Our AI creates engaging newsletter content tailored to each audience segment."
-      },
-      {
-        title: "Expert Editing & Design",
+        title: "Content Creation",
         icon: <PenTool className="h-6 w-6 text-sky-500" />,
-        description: "Content specialists refine the content and apply professional design elements."
+        description: "Design and write engaging email content and templates."
+      },
+      {
+        title: "Automation Setup",
+        icon: <Layers className="h-6 w-6 text-sky-500" />,
+        description: "Implement automated workflows and triggered email sequences."
       },
       {
         title: "Performance Optimization",
         icon: <BarChart className="h-6 w-6 text-sky-500" />,
-        description: "A/B testing and analytics to continuously improve open and click-through rates."
+        description: "Continuous testing and refinement based on analytics data."
       }
     ],
     caseStudy: {
-      client: "SaaS Customer Service Platform",
+      client: "B2B SaaS Platform",
       results: [
-        "42% average open rate (industry avg: 21%)",
-        "12% click-through rate (industry avg: 2.5%)",
-        "28% increase in user activation"
+        "45% average open rate (industry avg: 21%)",
+        "15% click-through rate (industry avg: 2.5%)",
+        "32% increase in customer retention",
+        "28% boost in recurring revenue from email campaigns"
       ]
     },
     color: 'from-blue-500 to-sky-400',

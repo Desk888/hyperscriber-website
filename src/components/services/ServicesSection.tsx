@@ -39,11 +39,11 @@ const services = [
     bgLight: 'bg-teal-50'
   },
   {
-    title: 'Newsletter Creation',
-    description: 'AI-assisted newsletters for SaaS brands to nurture leads and maintain customer engagement.',
+    title: 'Email Marketing Solutions',
+    description: 'Comprehensive email marketing services to nurture leads, drive conversions, and boost customer retention.',
     icon: <Mail className="h-8 w-8" />,
     period: '/month',
-    features: ['Weekly newsletters', 'Audience segmentation', 'Analytics tracking', 'Strategic content planning'],
+    features: ['Strategic newsletters', 'Email templates', 'Automation setup', 'Performance analytics'],
     color: 'from-blue-500 to-sky-400',
     bgLight: 'bg-sky-50'
   }
