@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ServiceCard from './components/ServiceCard';
+import ServicesHeader from './components/ServicesHeader';
 import { services } from './data/services';
 
 const ServicesList = () => {
@@ -29,14 +30,7 @@ const ServicesList = () => {
   return (
     <section className="py-20 bg-slate-50">
       <div className="container mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Comprehensive Content Solutions
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            From thought leadership to lead generation, we offer a full spectrum of content services designed specifically for SaaS companies.
-          </p>
-        </div>
+        <ServicesHeader />
         
         <motion.div 
           variants={containerVariants}
@@ -47,20 +41,12 @@ const ServicesList = () => {
         >
           {services.map((service, index) => (
             <ServiceCard 
-              key={index}
+              key={service.id}
               service={service}
               variants={itemVariants}
             />
           ))}
         </motion.div>
-        
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="text-center mt-16"
-        />
       </div>
     </section>
   );

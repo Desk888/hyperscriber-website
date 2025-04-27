@@ -1,11 +1,12 @@
 
 import { MessageSquare, FileText, Laptop, Mail, Users, Target, Lightbulb, PenTool, BarChart, Layers } from 'lucide-react';
 import { Service } from '../types/service';
+import React from 'react';
 
 export const services: Service[] = [
   {
     id: "linkedin",
-    icon: <MessageSquare className="h-8 w-8" />,
+    icon: React.createElement(MessageSquare, { className: "h-8 w-8" }),
     title: 'LinkedIn Ghostwriting for Founders',
     description: 'Position yourself as a thought leader and attract qualified leads.',
     details: [
@@ -23,22 +24,22 @@ export const services: Service[] = [
     process: [
       {
         title: "AI Content Foundation",
-        icon: <Lightbulb className="h-6 w-6 text-blue-500" />,
+        icon: React.createElement(Lightbulb, { className: "h-6 w-6 text-blue-500" }),
         description: "We analyze trending topics and your audience's preferences to create initial content outlines."
       },
       {
         title: "Expert Human Refinement",
-        icon: <PenTool className="h-6 w-6 text-blue-500" />,
+        icon: React.createElement(PenTool, { className: "h-6 w-6 text-blue-500" }),
         description: "Skilled content specialists refine the AI outputs, adding industry expertise and creative elements."
       },
       {
         title: "Strategic Publishing",
-        icon: <Target className="h-6 w-6 text-blue-500" />,
+        icon: React.createElement(Target, { className: "h-6 w-6 text-blue-500" }),
         description: "Content is published at optimal times for maximum engagement based on analytics."
       },
       {
         title: "Performance Analysis",
-        icon: <BarChart className="h-6 w-6 text-blue-500" />,
+        icon: React.createElement(BarChart, { className: "h-6 w-6 text-blue-500" }),
         description: "Comprehensive metrics tracking engagement, reach, and conversions to refine future content."
       }
     ],
@@ -55,7 +56,7 @@ export const services: Service[] = [
   },
   {
     id: "blog",
-    icon: <FileText className="h-8 w-8" />,
+    icon: React.createElement(FileText, { className: "h-8 w-8" }),
     title: 'SEO Blog Articles',
     description: 'Boost rankings and turn traffic into customers with conversion-focused blog content.',
     details: [
@@ -73,22 +74,22 @@ export const services: Service[] = [
     process: [
       {
         title: "Keyword Research",
-        icon: <Target className="h-6 w-6 text-purple-500" />,
+        icon: React.createElement(Target, { className: "h-6 w-6 text-purple-500" }),
         description: "Strategic identification of high-value keywords with reasonable competition levels."
       },
       {
         title: "AI-Assisted Drafting",
-        icon: <Lightbulb className="h-6 w-6 text-purple-500" />,
+        icon: React.createElement(Lightbulb, { className: "h-6 w-6 text-purple-500" }),
         description: "Our AI creates comprehensive, SEO-friendly article drafts based on research and keywords."
       },
       {
         title: "Expert Editing",
-        icon: <PenTool className="h-6 w-6 text-purple-500" />,
+        icon: React.createElement(PenTool, { className: "h-6 w-6 text-purple-500" }),
         description: "Content specialists refine and enhance the articles with industry expertise and engaging elements."
       },
       {
         title: "Optimization & Analysis",
-        icon: <BarChart className="h-6 w-6 text-purple-500" />,
+        icon: React.createElement(BarChart, { className: "h-6 w-6 text-purple-500" }),
         description: "Continuous monitoring of article performance with data-driven improvements."
       }
     ],
@@ -105,8 +106,8 @@ export const services: Service[] = [
   },
   {
     id: "website",
-    icon: <Laptop className="h-8 w-8" />,
-    title: 'Website & Ad Copywriting', 
+    icon: React.createElement(Laptop, { className: "h-8 w-8" }),
+    title: 'Website & Ad Copywriting',
     description: 'Convert more with persuasive website and ad copy that communicates your value proposition.',
     details: [
       'Strategic website content audit and strategy',
@@ -127,22 +128,22 @@ export const services: Service[] = [
     process: [
       {
         title: "Website Analysis",
-        icon: <Target className="h-6 w-6 text-teal-500" />,
+        icon: React.createElement(Target, { className: "h-6 w-6 text-teal-500" }),
         description: "Comprehensive audit of current website content and conversion performance."
       },
       {
         title: "AI-Powered Drafting",
-        icon: <Lightbulb className="h-6 w-6 text-teal-500" />,
+        icon: React.createElement(Lightbulb, { className: "h-6 w-6 text-teal-500" }),
         description: "AI creates conversion-focused copy drafts based on your value proposition and target audience."
       },
       {
         title: "Conversion Optimization",
-        icon: <PenTool className="h-6 w-6 text-teal-500" />,
+        icon: React.createElement(PenTool, { className: "h-6 w-6 text-teal-500" }),
         description: "Expert copywriters refine messaging to maximize clarity and persuasiveness."
       },
       {
         title: "A/B Testing & Refinement",
-        icon: <BarChart className="h-6 w-6 text-teal-500" />,
+        icon: React.createElement(BarChart, { className: "h-6 w-6 text-teal-500" }),
         description: "Data-driven testing to continuously improve conversion rates and ad performance."
       }
     ],
@@ -160,7 +161,7 @@ export const services: Service[] = [
   },
   {
     id: "email-marketing",
-    icon: <Mail className="h-8 w-8" />,
+    icon: React.createElement(Mail, { className: "h-8 w-8" }),
     title: 'Email Marketing Solutions',
     description: 'Drive engagement and conversions with comprehensive email marketing services.',
     details: [
@@ -182,22 +183,22 @@ export const services: Service[] = [
     process: [
       {
         title: "Strategy Development",
-        icon: <Target className="h-6 w-6 text-sky-500" />,
+        icon: React.createElement(Target, { className: "h-6 w-6 text-sky-500" }),
         description: "Create comprehensive email marketing strategy aligned with business goals."
       },
       {
         title: "Content Creation",
-        icon: <PenTool className="h-6 w-6 text-sky-500" />,
+        icon: React.createElement(PenTool, { className: "h-6 w-6 text-sky-500" }),
         description: "Design and write engaging email content and templates."
       },
       {
         title: "Automation Setup",
-        icon: <Layers className="h-6 w-6 text-sky-500" />,
+        icon: React.createElement(Layers, { className: "h-6 w-6 text-sky-500" }),
         description: "Implement automated workflows and triggered email sequences."
       },
       {
         title: "Performance Optimization",
-        icon: <BarChart className="h-6 w-6 text-sky-500" />,
+        icon: React.createElement(BarChart, { className: "h-6 w-6 text-sky-500" }),
         description: "Continuous testing and refinement based on analytics data."
       }
     ],
