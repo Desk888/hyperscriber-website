@@ -96,7 +96,6 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <motion.div key={index} variants={childVariants} className="group">
               <Card className="h-full flex flex-col border-0 bg-white shadow-md rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg">
-                {/* Gradient top border */}
                 <div className={`h-1.5 w-full bg-gradient-to-r ${service.color}`}></div>
                 <CardHeader className="pb-4">
                   <div className={`mb-3 w-14 h-14 flex items-center justify-center rounded-lg ${service.bgLight} text-blue-600`}>
@@ -128,7 +127,7 @@ const ServicesSection = () => {
                     size="sm"
                     asChild
                   >
-                    <Link to="/services">
+                    <Link to={`/services#${service.title.toLowerCase().replace(/\s+/g, '-')}`}>
                       <span>Learn More</span>
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Link>

@@ -1,11 +1,28 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ServiceCard from './components/ServiceCard';
 import ServicesHeader from './components/ServicesHeader';
 import { services } from './data/services';
+import { useLocation } from 'react-router-dom';
 
 const ServicesList = () => {
+  const location = useLocation();
+  
+  useEffect(() => {
+    // If there's a hash in the URL, scroll to the corresponding service
+    if (location.hash) {
+      const id = location.hash.slice(1); // Remove the # from the hash
+      const element = document.getElementById(id);
+      if (element) {
+        // Add a small delay to ensure the page is fully loaded
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location]);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -39,12 +56,16 @@ const ServicesList = () => {
           viewport={{ once: true, amount: 0.1 }}
           className="space-y-12"
         >
-          {services.map((service, index) => (
-            <ServiceCard 
-              key={service.id}
-              service={service}
-              variants={itemVariants}
-            />
+          {services.map((service) => (
+            <div 
+              key={service.id} 
+              id={service.title.toLowerCase().replace(/\s+/g, '-')}
+            >
+              <ServiceCard 
+                service={service}
+                variants={itemVariants}
+              />
+            </div>
           ))}
         </motion.div>
       </div>
