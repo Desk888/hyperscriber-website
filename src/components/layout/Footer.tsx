@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Mail, MapPin, Phone, Instagram, Linkedin, Twitter, ExternalLink } from 'lucide-react';
@@ -21,7 +20,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-muted-foreground mb-6 max-w-sm leading-relaxed">
-              AI-powered content agency for SaaS startups that delivers measurable growth and engagement.
+              Email marketing solutions that drive engagement, nurture leads, and boost conversions for SaaS startups.
             </p>
             <div className="flex items-center space-x-4 mb-6">
               <a 
