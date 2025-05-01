@@ -77,8 +77,8 @@ const Footer = () => {
               {[
                 'LinkedIn Ghostwriting',
                 'SEO Blog Articles',
-                'Website Copywriting',
-                'Newsletter Creation'
+                'Copywriting',
+                'Email Marketing'
               ].map((service) => (
                 <li key={service}>
                   <Link 
