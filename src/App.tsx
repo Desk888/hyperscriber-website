@@ -17,19 +17,17 @@ import CookieConsent from "./components/layout/CookieConsent";
 import ChatBot from "./components/layout/ChatBot";
 import SecurityHeaders from "./components/security/SecurityHeaders";
 
-// Configure the query client with more secure defaults
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       refetchOnWindowFocus: false,
       retry: 1,
-      staleTime: 60000, // 1 minute
-      gcTime: 300000, // 5 minutes (previously cacheTime)
-      // Only perform GETs for queries
+      staleTime: 60000,
+      gcTime: 300000,
       queryFn: async ({ queryKey, signal }) => {
         const response = await fetch(Array.isArray(queryKey) ? queryKey[0] : queryKey.toString(), { 
           signal,
-          credentials: 'same-origin', // Use cookies for same-origin requests
+          credentials: 'same-origin',
           headers: {
             'Content-Type': 'application/json'
           }
@@ -41,11 +39,9 @@ const queryClient = new QueryClient({
       },
     },
     mutations: {
-      // Add security defaults
       onMutate: () => {
-        // Could add CSRF token validation here
       },
-      retry: 0, // Don't retry mutations by default
+      retry: 0,
     },
   },
 });
