@@ -14,12 +14,12 @@ const SecurityHeaders: React.FC = () => {
     meta.httpEquiv = 'Content-Security-Policy';
     meta.content = 
       "default-src 'self'; " +
-      "script-src 'self' https://cdn.gpteng.co https://*.lovable.app 'unsafe-inline'; " + 
-      "style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; " +
-      "img-src 'self' data: https:; " + 
+      "script-src 'self' https://cdn.gpteng.co https://*.lovable.app 'unsafe-inline' https://*.googletagmanager.com https://www.google-analytics.com https://www.googletagmanager.com https://tagmanager.google.com 'unsafe-eval'; " + 
+      "style-src 'self' https://fonts.googleapis.com 'unsafe-inline' https://tagmanager.google.com; " +
+      "img-src 'self' data: https: https://*.google-analytics.com https://*.googletagmanager.com; " + 
       "font-src 'self' https://fonts.gstatic.com; " +
-      "connect-src 'self' https://*.supabase.co https://hyperscriber-ai.up.railway.app wss://*.supabase.co; " +
-      "frame-src 'self'; " +
+      "connect-src 'self' https://*.supabase.co https://hyperscriber-ai.up.railway.app wss://*.supabase.co https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; " +
+      "frame-src 'self' https://*.googletagmanager.com; " +
       "object-src 'none'; " +
       "base-uri 'self'; " +
       "form-action 'self';";

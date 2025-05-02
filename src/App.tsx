@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React, { useEffect } from "react";
+import React from "react";
 import TopBanner from "./components/layout/TopBanner";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
@@ -16,7 +16,6 @@ import NotFound from "./pages/NotFound";
 import CookieConsent from "./components/layout/CookieConsent";
 import ChatBot from "./components/layout/ChatBot";
 import SecurityHeaders from "./components/security/SecurityHeaders";
-import TagManager from "react-gtm-module";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -48,13 +47,6 @@ const queryClient = new QueryClient({
 });
 
 const App = () => {
-  useEffect(() => {
-    const tagManagerArgs = {
-      gtmId: 'GTM-TVZCBR63',
-    };
-    TagManager.initialize(tagManagerArgs);
-  }, []);
-
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
