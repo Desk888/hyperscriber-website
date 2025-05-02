@@ -13,7 +13,6 @@ const ContactInfo = () => {
       transition={{ duration: 0.7, delay: 0.2 }}
       className="space-y-6 h-full flex flex-col"
     >
-      {/* Book a Consultation Card */}
       <Card className="bg-gradient-to-r from-blue-600 to-blue-700 border-0 shadow-lg overflow-hidden rounded-xl">
         <CardContent className="p-8 text-white">
           <h3 className="text-xl font-semibold mb-4 tracking-tight">Book a Consultation</h3>
@@ -30,41 +29,7 @@ const ContactInfo = () => {
           </a>
         </CardContent>
       </Card>
-
-      {/* Contact Information Card - Updated to match book consultation section */}
-      <Card className="bg-gradient-to-r from-blue-600 to-blue-700 border-0 shadow-lg rounded-xl overflow-hidden">
-        <CardContent className="p-8 text-white">
-          <h3 className="text-xl font-semibold mb-6 tracking-tight">Contact Information</h3>
-          
-          <div className="space-y-6">
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center justify-center h-12 w-12 rounded-full bg-white/20 text-white">
-                <Mail className="h-5 w-5" />
-              </div>
-              <div>
-                <p className="text-sm text-white/70 font-medium">Email</p>
-                <a href="mailto:info@hyperscriber.com" className="text-white hover:text-white/80 transition-colors">
-                  info@hyperscriber.com
-                </a>
-              </div>
-            </div>
-            
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center justify-center h-12 w-12 rounded-full bg-white/20 text-white">
-                <Phone className="h-5 w-5" />
-              </div>
-            </div>
-            
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center justify-center h-12 w-12 rounded-full bg-white/20 text-white">
-                <MapPin className="h-5 w-5" />
-              </div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
       
-      {/* FAQ Teaser - Updated to match book consultation section */}
       <Card className="bg-gradient-to-r from-blue-600 to-blue-700 border-0 rounded-xl mt-auto">
         <CardContent className="p-6 text-white">
           <div className="flex items-center gap-3 mb-4">

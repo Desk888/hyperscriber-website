@@ -151,7 +151,6 @@ const ContactForm = () => {
       <h2 className="text-2xl font-semibold mb-6 tracking-tight">Send us a message</h2>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 flex-grow flex flex-col">
-          {/* Hidden CSRF token input */}
           <input type="hidden" name="csrfToken" value={csrfToken} />
           
           <FormField 
