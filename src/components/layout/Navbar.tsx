@@ -68,7 +68,7 @@ const Navbar = () => {
             </Link>
           ))}
           <a href="https://calendly.com/hyperscriber-info/free-introductory-call?preview_source=et_card&month=2025-04" target="_blank" rel="noopener noreferrer">
-            <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold px-4 py-3 rounded-full hover:opacity-90 transition-opacity duration-200 text-md hover:scale-110 transition-transform duration-200 id-book-call">
+            <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold px-4 py-3 rounded-full hover:opacity-90 transition-opacity duration-200 text-md hover:scale-110 transition-transform duration-200 id-calendly-booking">
               Book a Call
             </button>
           </a>
@@ -105,7 +105,7 @@ const Navbar = () => {
                   ))}
                   <div className="pt-4 mt-4 border-t">
                     <a href="https://calendly.com/hyperscriber-info/free-introductory-call?preview_source=et_card&month=2025-04" target="_blank" rel="noopener noreferrer">
-                      <Button className="w-full rounded-full py-6 text-base bg-gradient-to-r from-blue-600 to-blue-700 id-book-consultation">
+                      <Button className="w-full rounded-full py-6 text-base bg-gradient-to-r from-blue-600 to-blue-700 id-calendly-booking">
                         Book a Free Consultation
                       </Button>
                     </a>

@@ -90,7 +90,7 @@ if (!isVisible) return null;
             href="https://calendly.com/hyperscriber-info/free-introductory-call?preview_source=et_card&month=2025-04"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center flex-shrink-0 bg-white hover:bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium transition-colors duration-200 whitespace-nowrap id-get-started"
+            className="inline-flex items-center justify-center flex-shrink-0 bg-white hover:bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium transition-colors duration-200 whitespace-nowrap id-calendly-booking"
           >
             Get Started
           </a>

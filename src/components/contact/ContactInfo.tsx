@@ -22,7 +22,7 @@ const ContactInfo = () => {
           <a href="https://calendly.com/hyperscriber-info/free-introductory-call?preview_source=et_card&month=2025-04" target="_blank" rel="noopener noreferrer">
             <Button 
               variant="default"
-              className="w-full rounded-full py-6 bg-white hover:bg-blue-50 text-blue-700 transition-colors shadow-md hover:shadow-lg id-book-call"
+              className="w-full rounded-full py-6 bg-white hover:bg-blue-50 text-blue-700 transition-colors shadow-md hover:shadow-lg id-calendly-booking"
             >
               Book a Call <Calendar className="ml-2 h-4 w-4" />
             </Button>
