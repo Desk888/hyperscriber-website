@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Check } from 'lucide-react';
@@ -119,7 +120,7 @@ const CompletePackages = () => {
                   >
                     <Button 
                       variant="default"
-                      className="w-full bg-blue-600 hover:bg-blue-700 rounded-lg group"
+                      className="w-full bg-blue-600 hover:bg-blue-700 rounded-lg group id-get-in-touch"
                       size="lg"
                     >
                       <span>Get In Touch</span>
